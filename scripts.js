@@ -15,7 +15,7 @@ function cargarPeliculas() {
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title fw-bold">${pelicula.title}</h5>
                                 <p class="card-text mb-1"><strong>Director:</strong> ${pelicula.director}</p>
-                                <p class="card-text mb-3"><strong>Año:</strong> ${pelicula.release_year}</p>
+                                <p class="card-text mb-3"><strong>Año:</strong> ${pelicula.release_date}</p>
                                 <div class="mt-auto">
                                     <span class="badge bg-success fs-6">Puntuación: ${pelicula.rt_score} / 100</span>
                                 </div>
@@ -24,7 +24,7 @@ function cargarPeliculas() {
                     </div>
                 `;
             });
-        })
+        });
 }
 
 cargarPeliculas();
