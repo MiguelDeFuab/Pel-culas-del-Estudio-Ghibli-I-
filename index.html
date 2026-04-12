@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,26 @@
     <link rel="stylesheet" href="estilos.css">
     <title>Estudio Ghibli</title>
 </head>
+
 <body class="bg-light">
 
     <div class="container py-5">
         <h1 class="text-center mb-5 display-4 fw-bold text-dark">Catálogo Estudio Ghibli</h1>
-        
+
         <!-- buscador -->
         <div class="text-center mb-4">
-            <input type="text" id="textoBusqueda" class="form-control d-inline-block w-50" placeholder="Buscar película...">
+            <input type="text" id="textoBusqueda" class="form-control d-inline-block w-50"
+                placeholder="Buscar película...">
             <button id="botonBuscar" class="btn btn-primary">Buscar</button>
+        </div>
+
+        <div class="mt-5 mb-3 border-bottom pb-2">
+            <h2 class="text-primary">Mis Películas Favoritas</h2>
+        </div>
+        <section id="favoritas" class="row g-4 mb-5"></section>
+
+        <div class="mt-5 mb-3 border-bottom pb-2">
+            <h2 class="text-secondary">Todas las Películas</h2>
         </div>
 
         <section id="peliculas" class="row g-4"></section>
@@ -23,4 +35,5 @@
 
     <script src="scripts.js"></script>
 </body>
+
 </html>
