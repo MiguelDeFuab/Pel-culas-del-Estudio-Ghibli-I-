@@ -53,7 +53,7 @@ function guardarFavorita(id, titulo, imagen, director, anio, puntuacion) {
     if (!yaExiste) {
         favoritas.push({
             id: id,
-            titulo: titulo.replace(/'/g, "\\'"), // Previene errores con comillas en los títulos
+            titulo: titulo.replace(/'/g, "\\'"), // Previene errores con comillas en los títulos, tambien estan en los botones de favoritos
             imagen: imagen,
             director: director,
             anio: anio,
